@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+    background: rgb(207, 207, 207);
+    font-family: sans-serif;
+    // animation: changeBG 10s 1000;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+@keyframes changeBG {
+    0% {
+        background: rgb(255, 255, 255);
+    }
+
+    25% {
+        background: rgb(180, 223, 244);
+    }
+
+    50% {
+        background: rgb(217, 212, 237);
+    }
+
+    75% {
+        background: rgb(234, 211, 249);
+    }
+
+    100% {
+        background: rgb(255, 255, 255);
+    }
+}

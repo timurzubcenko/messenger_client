@@ -1,0 +1,17 @@
+name: Deployment
+
+on:
+  push:
+    branches:
+      - main
+
+.env: 
+  REACT_APP_API_URL: "REACT_APP_API_URL"
+
+jobs: 
+  deployment:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: deploy
+        # ...deployment-specific steps

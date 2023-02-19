@@ -1,0 +1,154 @@
+.align {
+    display: flex;
+    justify-content: flex-start;
+
+
+    &.my_massage {
+        justify-content: flex-end;
+
+        .block_message {
+            align-items: flex-end;
+        }
+    }
+
+    .block_message {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3px;
+
+
+        .massage {
+            background: rgb(226, 226, 240);
+            color: black;
+            display: inline-block;
+            gap: 2px;
+            padding: 5px 10px;
+            font-size: 18px;
+            border-radius: 10px;
+            max-width: 450px;
+
+            h6 {
+                color: rgb(231, 100, 100);
+                font-size: 12px;
+            }
+
+            h6.my_color {
+                color: rgb(42, 116, 235);
+            }
+
+            p {
+                // margin-left: 5px;
+                color: rgb(58, 57, 56);
+            }
+
+            .time {
+                display: flex;
+                justify-content: flex-end;
+
+                h4 {
+                    font-size: 10px;
+                    color: #5d5d5d60;
+                }
+            }
+        }
+    }
+
+    .pop_up_2.hidden {
+        display: none;
+    }
+
+    .pop_up_2 {
+
+        .window {
+            background: #8a949b50;
+            padding: 10px;
+            border-radius: 10px;
+            max-width: 310px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            h3 {
+                font-weight: 300;
+            }
+
+            .btns {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+
+                .btn {
+                    padding: 10px 10px;
+                    color: rgb(72, 72, 72);
+                    border-radius: 5px;
+                    cursor: pointer;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    transition: all 0.3s;
+                }
+
+                .btn.yes {
+                    background: transparent;
+                    color: #e63e3e !important;
+                }
+
+                .btn:hover {
+                    background: #69686860;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+.align.dark {
+
+
+    .massage {
+        background: rgb(89, 89, 92);
+        color: white;
+
+        h6 {
+            color: rgb(225, 137, 137);
+            font-size: 12px;
+        }
+
+        h6.my_color {
+            color: rgb(165, 200, 255);
+        }
+
+        p {
+            // margin-left: 5px;
+            color: rgb(208, 208, 208);
+        }
+    }
+
+    .pop_up_2 {
+
+        .window {
+            background: rgb(88, 87, 87);
+
+            h3 {
+                font-weight: 300;
+                color: white;
+            }
+
+            .btns {
+                .btn {
+                    color: rgb(190, 190, 190);
+                }
+            }
+        }
+    }
+}

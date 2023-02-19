@@ -1,0 +1,175 @@
+.pop_app {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #00000070;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .window {
+        background: white;
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .name_create {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        h3 {
+            font-weight: 300;
+        }
+
+        .input_name {
+            border: 1px solid rgb(121, 121, 121);
+            padding: 10px;
+            color: rgb(89, 89, 89);
+            font-size: 16px;
+            width: 280px;
+            outline: none;
+        }
+
+        .input_name.onAnimate {
+            animation: notName 0.5s 1;
+        }
+
+        .change_them {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            i {
+                font-size: 25px;
+                cursor: pointer;
+            }
+        }
+
+        .btns {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 10px;
+
+            .btn {
+                border: 1px solid rgb(64, 64, 234);
+                color: rgb(64, 64, 234);
+                padding: 10px 20px;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+
+            .yes {
+                background: rgb(64, 64, 234);
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+
+
+.pop_app.dark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #00000070;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .window {
+        background: rgb(106, 102, 102);
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: #ffffff;
+
+        .name_create {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        h3 {
+            font-weight: 300;
+        }
+
+        .input_name {
+            border: 1px solid rgb(121, 121, 121);
+            background: transparent;
+            padding: 10px;
+            color: rgb(244, 244, 244);
+            font-size: 16px;
+            width: 280px;
+            outline: none;
+        }
+
+        .input_name.onAnimate {
+            animation: notName 0.5s 1;
+        }
+
+        .change_them {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            i {
+                font-size: 25px;
+                cursor: pointer;
+            }
+        }
+
+        .btns {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 10px;
+
+            .btn {
+                border: 1px solid rgb(64, 64, 234);
+                color: rgb(64, 64, 234);
+                padding: 10px 20px;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+
+            .yes {
+                background: rgb(64, 64, 234);
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.pop_app.hidden {
+    display: none;
+}
+
+
+
+@keyframes notName {
+    0% {}
+
+    10% {
+        box-shadow: 0 0 10px red;
+    }
+
+    25% {
+        box-shadow: 0 0 10px red;
+    }
+
+    80% {
+        box-shadow: 0 0 10px red;
+    }
+}
